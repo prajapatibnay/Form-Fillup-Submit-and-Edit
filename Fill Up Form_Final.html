@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<!-- ///..................................................................................................................../// -->
+<head>
+      <title>Form Fill Up</title>
+
+      <link rel="stylesheet" href="CSS/form style.css">
+
+	    <style>
+		      body{
+			        background-color: lightblue;
+		          }
+
+		       h1{
+			         text-decoration: underline;
+               text-align: center;
+
+		        }
+
+            td,th {
+              text-align: center;
+            }
+	    </style>
+</head>
+
+<body>
+<!-- ///..................................................................................................................../// -->
+    <div id="wrapper"> 
+            <div id="banner">
+                 <h1>Swastik University</h1>
+            </div><!-- banner close -->
+
+            <div id="homemenu">
+               <a href="#">Home|</a>
+               <a href="#">Courses|</a>
+               <a href="#">Message|</a>
+               <a href="#">Gallery|</a>
+               <a href="#">Contact|</a>
+            </div><!-- homemenu close -->  
+
+            <div id="leftpart">
+                    <div class="loginbox">
+                              <h1>Please login...</h1>
+                                 <div id="enter">
+                                     Username:
+                                         <input type="text" name="Username">
+                                 </div>
+
+                                 <div id="enter">
+                                     Password:
+                                         <input type="text" name="Password">
+                                 </div>
+                                 
+                                  <div id="enter">
+                                     <input type="submit" value="Login">
+                                     <input type="submit" value="Cancel">
+                                  </div>
+                    </div><!-- loginbox close -->
+            </div><!-- leftpart close -->
+                       
+            <div id="rightpart">
+                  <form name="myForm">
+                        <h1>Fill up the following information to Register...</h1> 
+                            <input type="hidden" name="editID" id="editID" value="">
+                            
+                            <div id="enter">
+                               Enter name:
+                                   <input type="text" placeholder="First-Name" name="fname"/>
+                                   <input type="text" placeholder="Last-Name" name="lname"/>
+                            </div>
+
+                            <div id="enter">
+                               Enter User-name:
+                                   <input type="text" placeholder="User-Name" name="uname"/>
+                            </div> 
+
+                             <div id="enter">
+                               Enter Email-Adress:
+                                   <input type="text" placeholder="example@gmail.com" name="eaddress"/>
+                            </div> 
+                            
+                            <div id="enter">
+                               Enter Password:
+                                   <input type="text" placeholder="Password" name="password"/>
+                                   Use at least one lowercase letter, one numeral, and seven characters.
+                            </div> 
+
+                             <div id="enter">
+                               Enter Age:
+                                   <input type="text" placeholder="Age" name="age"/>
+                            </div> 
+                                                                                                                                         
+                             <div id="enter">
+                                  <input type="button" value="Add" name="btnAdd" id="btnAdd">
+
+                                  <input type="button" value="Save" name="btnSave" id="btnSave">
+
+                                  <input type="button" value="RemoveAll" name="btnRemoveAll" id="btnRemoveAll">
+                             </div> 
+                       </form><!-- formclose -->
+             </div><!--rightpart close-->
+
+                         <div>
+                              <table border="1" id="mytable" width="100%">
+                              <thead>
+                                <tr id="heading">
+                                    <th>S.N.</th>
+                                    <th>First-Name</th>
+                                    <th>Last-Name</th>
+                                    <th>User-Name</th>
+                                    <th>Email-adress</th>
+                                    <th>Password</th>
+                                    <th>Age</th>
+                                    <th>Actions</th>
+                                 </tr>
+                                </thead>
+
+                                 <tbody id="mytable">
+                                    
+                                 </tbody>
+                             </table>
+                         </div>
+      </div><!-- wrapper close -->
+<!-- ///..................................................................................................................../// -->
+     <script type="text/javascript" src="js/script1.js"></script>
+<!-- ///..................................................................................................................../// -->
+</body>
+</html>
